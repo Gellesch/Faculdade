@@ -1,0 +1,142 @@
+@media screen and (max-width: 480px){
+
+    .header {
+        width: 0;
+        text-align: center;
+    }
+
+    .titulo {
+        float: none;
+        margin: 15px;
+        width: 400px;
+    }
+
+    .menu a {
+
+        padding-top: 20px;
+        float: none;
+        margin-left: 25px;
+        margin-right: 0;
+        width: 100%;
+        height: auto;    
+
+    }
+
+    .img2 {
+            float: none;
+            width: 90%;
+            height: auto;
+    }
+
+    .img3 {
+        float: none;
+        width: 220px;
+        height: auto;
+    }
+
+    .img4 {
+        float: none;
+        width: 90%;
+        height: auto;
+    }
+
+    .titulo2 {
+        float: none;
+        margin: 15px;
+        width: 400px;
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+}
+
+
+
+body {
+    margin: 5%;
+    background-image: url(./Imagens/Fundo.png);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    overflow-x: hidden;
+
+}
+
+img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    display: block;
+}
+
+a {
+    width: 200px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(41, 147, 240);
+    color: #000000
+}
+
+h1,
+h2,
+h3 {
+    font-style: italic;
+    line-height: 1.5;
+    color: rgb(41, 147, 240);
+}
+
+h3 {
+    text-align: center;
+}
+
+h1 {
+    border: 6px solid #000000;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(228, 234, 240);
+}
+
+h2,
+h3 {
+    font-size: 30px;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    color: black;
+}
+
+video {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    display: block;
+}
+
+footer {
+    border: 6px solid #000000;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(228, 234, 240);
+
+}

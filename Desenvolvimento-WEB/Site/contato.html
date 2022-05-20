@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="contatos.css">
+</head>
+
+<body>
+
+    <img src="./Imagens/linux-151619.png" alt="" width="800" height="300">
+
+    <nav>
+        <h2>
+            <a href="index.html">-Home-</a>
+            <a href="distribuicoes.html">-Ditribuições-</a>
+        </h2>
+    </nav>
+
+    <header>
+        <h1>Contato</h1>
+    </header>
+
+    <div id="formulario">
+        <fieldset>
+            <legend>Contato</legend>
+            <fieldset action="https://wiquip.com.br" method="post">
+                <input type="Hidden" name="AnyFormModle" value="Mail">
+                <input type="Hidden" name="AnyFormDisplay" value="">
+                <input type="Hidden" name="AnyFormTo" value="">
+                <input type="Hidden" name="AnyFormSubject" value="Dados do Formulário de HTML">
+                <p>Qual o seu nome ? <input class="nome" type="Text" name="Nome" size="50"></p>
+                <p>Qual o seu E-mail ? <input class="email" type="Text" name="E-mail" size="50"></p>
+                <p>
+                    Você gostou da minha Pagina ?<input type="Radio" name="Gostou" value="Sim">sim <input type="Radio"
+                        name="Gostou" value="Mais ou Menos" checked="">
+                    Mais ou Menos <input type="Radio" name="Gostou" value="Não">Nem um pouco!</p>
+                <p>
+                    Qual a página que você mais gostou ? <select name="Melhor Página">
+                        <option value="index">Pagina Inicial</option>
+                        <option value="distribuicoes">Distribuições</option>
+                        <option value="contato">Contato</option>
+
+                    </select></p>
+                <p>Deixe seus comentários ou duvida sobre a minha Pagina:</p>
+                <textarea name=" Comentários" cols="88" rows="5"></textarea>
+
+                <p>O que está faltando ? <input class="faltando" type="Text" size="50">
+                </p>
+                <p>Essa Home Page lhe ajudou ?<input type="Radio" name="Ajudou?" value="sim">Sim <input type="Radio"
+                        name="Ajudou?" value="Não!">Não!</p>
+                <p>
+                    <input type="Submit" value="Enviar ">
+                    <input type="Reset" value="Limpar Dados">
+                </p>
+            </fieldset>
+        </fieldset>
+    </div>
+    <div id="final"></div>
+</body>
+
+</html>

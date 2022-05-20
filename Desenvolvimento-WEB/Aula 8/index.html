@@ -1,0 +1,25 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        const greetingMessage = () => {
+            let h = new Date().toLocaleTimeString('pt-BR', { hour: 'numeric', hour12: false });
+            let d = new Date().toLocaleDateString('pt-BR', { weekday: 'long' });
+            if (h <= 5) return 'Boa madrugada, hoje é ' + d;
+            if (h < 12) return 'Bom dia, hoje é ' + d;
+            if (h < 18) return 'Boa tarde, hoje é ' + d;
+            return 'Boa noite, hoje é ' + d;
+        }
+
+        function exibeAlert() {
+            alert((greetingMessage()) + "\n\nWilliam Carniel Gellesch\nSanto André\nEstudante de Análise e Desenvolvimento pela Mackenzie!");
+        }
+        onload = exibeAlert()
+    </script>
+    </script>
+</body>
+
+</html>
