@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Professor</title>
+    <link rel="stylesheet" href="./styles/turma.css">
+</head>
+
+<body>
+    <img class="logo" src="./img/EscolaOctógono_horizontal.png" alt="logotipo Escola Octógono">
+
+    <div class="container">
+        <div class="content">
+            <div id="turma">
+                <h1>Lista de Presença</h1>
+                <label>Selecione uma Turma:</label>
+                <div class="button-row">
+                    <button class="button" onclick="selecionarTurma('turmaA')">Turma A</button>
+                    <button class="button" onclick="selecionarTurma('turmaB')">Turma B</button>
+                    <button class="button" onclick="selecionarTurma('turmaC')">Turma C</button>
+                    <button class="button" onclick="selecionarTurma('turmaD')">Turma D</button>
+                </div>
+                <div class="button-row">
+                    <button class="button" onclick="selecionarTurma('turmaE')">Turma E</button>
+                    <button class="button" onclick="selecionarTurma('turmaF')">Turma F</button>
+                    <button class="button" onclick="selecionarTurma('turmaG')">Turma G</button>
+                    <button class="button" onclick="selecionarTurma('turmaH')">Turma H</button>
+                </div>
+                <label for="materias">Matérias:</label>
+                <div class="container1">
+                    <div class="row">
+                        <select id="materias" name="materias">
+                            <option value="nenhum">Nenhum</option>
+                            <option value="portugues">Português</option>
+                            <option value="matematica">Matemática</option>
+                            <option value="ciencias">Ciências</option>
+                            <option value="fisica">Física</option>
+                            <option value="geografia">Geografia</option>
+                            <!-- Adicione mais opções conforme necessário -->
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="Consultar">
+            </div>
+        </div>
+        <div class="content1">
+            <div id="aluno">
+                <h1>Consultar Faltas por Aluno</h1>
+                <input type="submit" value="Consultar" onclick="window.location.href = 'aluno.html';">
+                <p class="link">
+                    <a href="./index.html">Sair</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script_turma.js"></script>
+
+    <script>
+        function selecionarTurma(turma) {
+            // Remove a classe 'selected' de todos os botões
+            var buttons = document.querySelectorAll('.button');
+            buttons.forEach(function (button) {
+                button.classList.remove('selected');
+            });
+            // Define a turma selecionada
+            sessionStorage.setItem('turmaSelecionada', turma);
+            // Adiciona a classe 'selected' ao botão clicado
+            event.target.classList.add('selected');
+        }
+        function consultar() {
+            // Obtém a turma selecionada
+            var turma = sessionStorage.getItem('turmaSelecionada');
+            // Obtém a matéria selecionada
+            var materia = document.getElementById('materias').value;
+            if (turma && materia !== 'nenhum') {
+                // Redireciona para a página de chamada.html com os parâmetros selecionados
+                window.location.href = './chamada.html?turma=' + turma + '&materia=' + materia;
+            } else {
+                alert('Por favor, selecione uma turma e uma matéria.');
+            }
+        }
+        document.querySelector('input[type="submit"]').addEventListener('click', function (event) {
+            event.preventDefault(); // Impede o envio do formulário padrão
+            consultar(); // Chama a função de consulta ao clicar no botão "Consultar"
+        });
+    </script>
+</body>
+
+</html>

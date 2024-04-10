@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Aluno</title>
+    <link rel="stylesheet" href="./styles/aluno.css">
+</head>
+
+
+<body>
+    <img class="logo" src="./img/EscolaOctógono_horizontal.png" alt="logotipo Escola Octógono">
+    <div class="container">
+        <div class="content">
+
+            <div id="aluno">
+                <h1>Informações do Aluno</h1>
+                <form>
+                    <h4>Dados do Aluno</h4>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="João da Silva">
+                    </div>
+                    <div>
+                        <label for="ra">Número do RA:</label>
+                        <input type="text" id="ra" name="ra" placeholder="123456">
+                    </div>
+                    <div>
+                        <label for="turma">Turma:</label>
+                        <input type="text" id="turma" name="turma" value="Turma A" disabled>
+                    </div>
+                    <div>
+                        <label for="materia">Matéria:</label>
+                        <input type="text" id="materia" name="materia" value="Português" disabled>
+                    </div>
+
+                    <input type="submit" value="Consultar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div id="dados">
+                <h4>Dados de Presença</h4>
+                <table>
+                    <tr>
+                        <td>Total de Aulas:</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Total de Faltas:</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Total de Faltas Justificadas:</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Percentual de Presença:</td>
+                        <td>80%</td>
+                    </tr>
+                </table>
+                <div class="link">
+                    <a href="./turma.html">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração do Sistema</title>
+    <link rel="stylesheet" href="./styles/administrador.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="links" id="parasenha"></a>
+
+        <img class="logo" src="./img/EscolaOctógono_horizontal.png" alt="Logo da Empresa">
+        <h4>Administrador</h4>
+        <div class="content">
+            <div id="professor">
+                <div id="cadastro-professores" action="process_cadastro_professores.php" method="POST">
+                    <h1>Cadastro de Professores</h1>
+                    <label for="nome-professor">Nome do Professor:</label>
+                    <input type="text" id="nome-professor" name="nome-professor"
+                        placeholder="Digite o nome do professor" required>
+
+                    <label for="e-mail-professor">E-mail:</label>
+                    <input type="text" id="e-mail" name="e-mail" placeholder="Digite o e-mail do professor" required>
+
+                    <label for="R.A">R.A:</label>
+                    <input type="text" id="R.A" name="R.A" placeholder="Digite o R.A do professor" required>
+
+                    <label for="senha-professor">Senha:</label>
+                    <input type="text" id="senha" name="senha" placeholder="Digite uma senha" required>
+
+                    <label for="senha-professor">Confirme a Senha:</label>
+                    <input type="text" id="senha" name="senha" placeholder="Confirme a senha" required>
+
+                    <label for="materias">Matérias:</label>
+                    <div class="container1">
+                        <div class="row">
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Cadastrar Professor">
+            </div>
+            </form>
+        </div>
+
+
+        <div class="content">
+            <div id="aluno">
+                <form id="cadastro-alunos" action="process_cadastro_alunos.php" method="POST">
+                    <h1>Cadastro de Alunos</h1>
+                    <label for="nome-aluno">Nome do Aluno:</label>
+                    <input type="text" id="nome-aluno" name="nome-aluno" placeholder="Digite o nome do aluno" required>
+                    <label for="ID-aluno">ID do Aluno:</label>
+                    <input type="text" id="ID-aluno" name="ID-aluno" placeholder="Digite a ID do aluno" required>
+
+                    <label for="materias">Matérias:</label>
+                    <div class="container1">
+                        <div class="row">
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <select id="materias" name="materias">
+                                <option value="nenhum">Nenhum</option>
+                                <option value="portugues">Português</option>
+                                <option value="matematica">Matemática</option>
+                                <option value="ciencias">Ciências</option>
+                                <option value="fisica">Física</option>
+                                <option value="geografia">Geografia</option>
+                                <!-- Adicione mais opções conforme necessário -->
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" value="Cadastrar Aluno">
+                </form>
+                <p class="link">
+                    <a href="index.html">Sair</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

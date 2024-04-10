@@ -1,0 +1,198 @@
+/* Reset de estilos */
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos gerais do body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf9f9; /* Cor de fundo cinza claro */
+}
+
+/* Estilos do container */
+.container {
+    display: flex;
+    flex-direction: column; /* Altera o fluxo para coluna */
+}
+
+/* Estilos compartilhados entre .content e .content1 */
+.content,
+.content1 {
+    width: 90%;
+    max-width: 580px;
+    min-height: 400px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+}
+
+/* Estilos da imagem do logotipo */
+img.logo {
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto; /* Espaçamento superior */
+}
+
+h1 {
+    font-size: 36px;
+    color: #312569;
+    padding: 2px 0 10px 0;
+    font-family: montserrat, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h1:after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+    background: linear-gradient(left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+}
+
+/* Estilos compartilhados entre #turma e #aluno */
+#turma,
+#aluno {
+    position: relative;
+    width: 88%;
+    padding: 18px 6% 60px 6%;
+    margin: 0 auto;
+    background: #f7f7f7;
+    border: 1px solid rgba(147, 184, 189, 0.8);
+    border-radius: 5px;
+    box-shadow: 5px;
+}
+
+/* Estilos da linha de botões */
+.button-row {
+    margin-bottom: 10px;
+    display: flex; /* Exibe os botões em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Estilos dos botões */
+.button {
+    padding: 10px 20px;
+    margin: 0 5px 20px 5px; /* Espaçamento entre os botões */
+    background-color: #312569;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fdb12c;
+}
+
+/* Estilos dos botões de submit */
+input[type="submit"] {
+    width: 100%;
+    cursor: pointer;
+    background: #312569;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    margin: 0;
+    text-shadow: 0 1px 1px #333;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+
+input[type="submit"]:hover {
+    background: #ff010b;
+}
+
+/* Estilos dos labels */
+label {
+    color: #fdb12c;
+    position: relative;
+}
+
+/* Estilos dos selects */
+select {
+    margin: 5px;
+    outline: none;
+    border: 1px solid #fdb12c;
+    border-radius: 5px;
+    padding: 5px;
+    flex: 1;
+    max-width: calc(50% - 10px);
+}
+
+/* Estilos do link de saída */
+.link {
+    position: absolute;
+    background: #dfe2e2;
+    color: #7f7c7c;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 90%;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #dbe5e8;
+    border-radius: 0 0 5px 5px;
+}
+
+.link a {
+    font-weight: bold;
+    background: #f7f8f1;
+    padding: 6px;
+    color: #ff010b;
+    margin-left: 10px;
+    border: 1px solid #fdb12c;
+    border-radius: 5px;
+    transition: all 0.4s linear;
+}
+
+.link a:hover {
+    color: #312569;
+    background: #f7f7f7;
+    border: 1px solid #312569;
+}
+
+/* Media query para dispositivos com largura máxima de 768 pixels */
+@media (max-width: 768px) {
+    /* Estilos para .content1 */
+    .content1 {
+        order: 1; /* Muda a ordem do elemento para 1 (abaixo de .content) */
+    }
+
+    /* Estilos para a linha de botões em dispositivos móveis */
+    .button-row {
+        flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha */
+    }
+
+    /* Estilos para os botões em dispositivos móveis */
+    .button-row button {
+        flex: 1 50%; /* Cada botão ocupa metade da largura do contêiner pai */
+        margin-right: 5px; /* Espaçamento entre os botões */
+        margin-bottom: 5px; /* Espaçamento entre as linhas de botões */
+    }
+
+    /* Estilos para garantir que o último botão de cada linha não tenha margem à direita */
+    .button-row button:last-child {
+        margin-right: 0;
+    }
+
+    /* Estilos do link de saída em dispositivos móveis */
+    .link {
+        max-width: 82%; /* Reduz a largura do link */
+    }
+}

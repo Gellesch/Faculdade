@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulário de Recuperação de Senha com HTML5 e CSS3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <a class="links" id="parasenha"></a>
+        <a class="links" id="paralogin"></a>
+
+        <img class="logo" src="./img/EscolaOctógono_horizontal.png" alt="logotipo Escola Octógono">
+
+        <div class="content">
+
+            <div id="senha">
+                <form method="post" action="">
+                    <h1>Recuperar Senha</h1>
+
+                    <p>
+                        <label for="nome_cad">Seu nome</label>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                    </p>
+
+                    <p>
+                        <label for="email_cad">Seu e-mail</label>
+                        <input id="email_cad" name="email_cad" required="required" type="email"
+                            placeholder="contato@escolaoctogono.com.br" />
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Enviar senha por E-mail" />
+                    </p>
+
+                    <p class="link">
+                       <a href="index.html"> Voltar</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

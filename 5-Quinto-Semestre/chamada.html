@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presença</title>
+    <link rel="stylesheet" href="./styles/chamada.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="./img/EscolaOctógono_horizontal.png" alt="logotipo Escola Octógono">
+        <div class="content">
+            <div id="lista">
+                <div class="planilha">
+                    <h1>Lista de Presença</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dia da Semana</th>
+                                <th>Mês/Ano</th>
+                                <th>Nome da Turma</th>
+                                <th>Aluno</th>
+                                <th>Presença</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Os dados serão preenchidos dinamicamente pelo PHP -->
+                            <?php include 'fetch_data.php'; ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="botão">
+                    <p class="link">
+                        <a href="./turma.html">Voltar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

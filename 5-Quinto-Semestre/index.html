@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Escola Octogono</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="./img/EscolaOctógono_horizontal.png" alt="logotipo Escola Octógono">
+        <a class="links" id="parasenha"></a>
+        <a class="links" id="paralogin"></a>
+        <div class="content">
+            <!-- LOGIN -->
+            <div id="login">
+                <form id="loginForm" method="post" action="">
+                    <h1>Controle de Presenças</h1>
+                    <p>
+                        <label for="nome_login">Seu nome</label>
+                        <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. Lais.Regina" />
+                    </p>
+
+                    <p>
+                        <label for="senha_login">Sua senha</label>
+                        <input id="senha_login" name="senha_login" required="required" type="password" placeholder="ex. Escola@123" />
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                        <label for="manterlogado">Manter-me logado</label>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Acessar" onclick="validarLogin()" />
+                    </p>
+
+                    <p class="link">
+                        Esqueceu sua Senha? <a href="./senha.html">Recuperar Senha</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validarLogin() {
+            event.preventDefault(); // Impede o envio do formulário
+
+            // Obter os valores inseridos
+            var username = document.getElementById("nome_login").value;
+            var password = document.getElementById("senha_login").value;
+
+            // Verificar as credenciais do administrador
+            if (username === "Administrador" && password === "123456") {
+                window.location.href = "./administrador.html"; // Redirecionar para a página do administrador
+            }
+            // Verificar as credenciais do professor
+            else if (username === "Professor" && password === "123456") {
+                window.location.href = "./turma.html"; // Redirecionar para a página do professor
+            } else {
+                alert("Usuário ou senha incorretos."); // Exibir mensagem de erro
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
