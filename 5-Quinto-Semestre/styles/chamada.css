@@ -101,6 +101,42 @@ th {
   transition: all 0.4s linear;
 }
 
+.salvar {
+  font-weight: bold;
+  background: #f7f8f1;
+  padding: 6px;
+  color: #ff010b;
+  margin-left: 10px;
+  border: 1px solid #fdb12c;
+  border-radius: 5px;
+  transition: all 0.4s linear;
+  text-decoration: underline; /* Adiciona um sublinhado */
+}
+
+.popup {
+  font-weight: bold;
+  font-size: 30px; /* Aumenta o tamanho do texto */
+  font-weight: bold;
+    background: #f7f8f1;
+    padding: 20px; /* Aumenta o preenchimento interno */
+    color: #ff010b;
+    border: 1px solid #fdb12c;
+    border-radius: 5px;
+    transition: all 0.4s linear;
+    position: fixed;
+    top: 50%; /* Posiciona o topo do popup no meio da tela */
+    left: 50%; /* Posiciona a esquerda do popup no meio da tela */
+    transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
+    z-index: 9999; /* Garante que o popup esteja na frente de outros elementos */
+    width: 300px; /* Define a largura da caixa do popup */
+    height: 150px; /* Define a altura da caixa do popup */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex; /* Permite o uso do alinhamento vertical */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+
 @media (max-width: 768px) {
   .button-row {
     display: flex;

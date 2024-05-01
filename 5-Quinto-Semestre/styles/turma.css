@@ -97,6 +97,11 @@ h1:after {
     background-color: #fdb12c;
 }
 
+.button.selected {
+    background-color: #fdb12c; /* Cor de fundo para indicar seleção */
+    color: #fff; /* Cor do texto quando selecionado */
+}
+
 /* Estilos dos botões de submit */
 input[type="submit"] {
     width: 100%;
