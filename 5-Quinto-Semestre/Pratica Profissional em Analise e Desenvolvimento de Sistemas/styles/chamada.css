@@ -113,6 +113,13 @@ th {
   text-decoration: underline; /* Adiciona um sublinhado */
 }
 
+.presenca {
+  background-color: #c8e6c9; /* Verde claro para indicar presença */
+}
+
+.falta {
+  background-color: #ffcdd2; /* Vermelho claro para indicar falta */
+}
 .popup {
   font-weight: bold;
   font-size: 30px; /* Aumenta o tamanho do texto */
@@ -135,6 +142,13 @@ th {
     justify-content: center; /* Centraliza horizontalmente o conteúdo */
     align-items: center; /* Centraliza verticalmente o conteúdo */
 }
+
+/* Estilos para ocultar elementos durante a impressão */
+@media print {
+      .no-print {
+      display: none;
+    }
+  }
 
 
 @media (max-width: 768px) {

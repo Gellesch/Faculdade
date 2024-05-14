@@ -75,8 +75,13 @@
             // Obtém a matéria selecionada
             var materia = document.getElementById('materias').value;
             if (turma && materia !== 'nenhum') {
-                // Redireciona para a página de chamada.html com os parâmetros selecionados
-                window.location.href = './chamada.html?turma=' + turma + '&materia=' + materia;
+                // Redireciona para a página específica de chamada com base na turma selecionada
+                if (turma === 'turmaA') {
+                    window.location.href = './ChamadaA.html?materia=' + materia;
+                } else if (turma === 'turmaB') {
+                    window.location.href = './ChamadaB.html?materia=' + materia;
+                }
+                // Adicione mais condições conforme necessário para outras turmas
             } else {
                 alert('Por favor, selecione uma turma e uma matéria.');
             }
